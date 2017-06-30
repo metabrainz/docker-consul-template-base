@@ -1,6 +1,6 @@
 FROM metabrainz/base-image
 
-ARG CT_VERSION="0.18.3"
+ARG CT_VERSION="0.18.5"
 ARG CT_RELEASE="consul-template_${CT_VERSION}_linux_amd64.zip"
 
 RUN curl -O https://releases.hashicorp.com/consul-template/$CT_VERSION/$CT_RELEASE && \
