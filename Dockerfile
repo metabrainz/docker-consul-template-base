@@ -1,4 +1,4 @@
-FROM metabrainz/base-image:focal-1.0.0-1
+FROM metabrainz/base-image:focal-1.1.0
 
 ARG CT_VERSION="0.27.1"
 ARG CT_RELEASE="consul-template_${CT_VERSION}_linux_amd64.zip"
@@ -11,7 +11,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.schema-version="1.0.0-rc1" \
       org.label-schema.vendor="MetaBrainz Foundation" \
-      org.metabrainz.based-on-image="metabrainz/base-image:focal-1.0.0-1" \
+      org.metabrainz.based-on-image="metabrainz/base-image:focal-1.1.0" \
       org.metabrainz.consul-template.version="0.27.1"
 
 RUN curl -O https://releases.hashicorp.com/consul-template/$CT_VERSION/$CT_RELEASE && \
